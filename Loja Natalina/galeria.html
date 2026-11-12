@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Aproveite as ofertas especiais de Natal da Lux Modesto. Encontre tênis incríveis com descontos exclusivos."
+    >
+
+    <title>Ofertas Especiais | LUX MODESTO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="Java.js" defer></script>
+    <!-- Favicon da LUX MODESTO -->
+    <link rel="icon" type="image/png" href="Imagem/favicon.png">
+</head>
+
+<body>
+
+    <!-- ==================================
+         CABEÇALHO LUX MODESTO
+    ================================== -->
+
+    <header class="cabecalho-lux">
+
+        <div class="lux-conteudo">
+
+            <!-- LOGO E NOME DA LOJA -->
+            <a
+                href="index.html"
+                class="lux-marca"
+                aria-label="Lux Modesto - Página inicial"
+            >
+
+                <img
+                    src="Imagem/Logo.png"
+                    alt="Logotipo Lux Modesto"
+                    class="lux-logo"
+                >
+
+                <div class="lux-identidade">
+                    <h2>LUX MODESTO</h2>
+                    <p>O luxo está em cada passo.</p>
+                </div>
+
+            </a>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav
+                class="lux-menu"
+                aria-label="Navegação principal"
+            >
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a
+                    href="galeria.html"
+                    aria-current="page"
+                >
+                    Ofertas
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ==================================
+         CONTEÚDO PRINCIPAL
+    ================================== -->
+
+    <main>
+
+        <!-- BANNER DE OFERTAS -->
+        <section class="banner-ofertas">
+
+            <p class="subtitulo">
+                PROMOÇÕES DE NATAL
+            </p>
+
+            <h1>Ofertas Especiais 🎄</h1>
+
+            <p>
+                Aproveite descontos exclusivos em modelos
+                selecionados para este Natal!
+            </p>
+
+        </section>
+
+        <!-- ==================================
+             CONTAGEM REGRESSIVA
+        ================================== -->
+
+        <section class="secao-contagem">
+
+            <h2>Contagem regressiva para o Natal</h2>
+
+            <p>
+                Não perca nossas ofertas especiais!
+            </p>
+
+            <div class="contador-ofertas">
+
+                <!-- DIAS -->
+                <div class="tempo-oferta">
+
+                    <strong id="oferta-dias">
+                        00
+                    </strong>
+
+                    <span>Dias</span>
+
+                </div>
+
+                <!-- HORAS -->
+                <div class="tempo-oferta">
+
+                    <strong id="oferta-horas">
+                        00
+                    </strong>
+
+                    <span>Horas</span>
+
+                </div>
+
+                <!-- MINUTOS -->
+                <div class="tempo-oferta">
+
+                    <strong id="oferta-minutos">
+                        00
+                    </strong>
+
+                    <span>Minutos</span>
+
+                </div>
+
+                <!-- SEGUNDOS -->
+                <div class="tempo-oferta">
+
+                    <strong id="oferta-segundos">
+                        00
+                    </strong>
+
+                    <span>Segundos</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================
+             PRODUTOS EM PROMOÇÃO
+        ================================== -->
+
+        <section class="catalogo">
+
+            <div class="titulo-catalogo">
+
+                <p class="subtitulo">
+                    SELEÇÃO ESPECIAL
+                </p>
+
+                <h2>8 Ofertas Imperdíveis</h2>
+
+                <p>
+                    Clique na imagem para ampliar
+                    e conferir os detalhes do tênis.
+                </p>
+
+            </div>
+
+            <!--
+                OS 8 PRODUTOS SÃO CARREGADOS
+                AUTOMATICAMENTE PELO Java.js
+            -->
+            <div
+                id="lista-ofertas"
+                class="lista-produtos"
+            ></div>
+
+        </section>
+
+        <!-- ==================================
+             MODAL / LIGHTBOX DE IMAGENS
+        ================================== -->
+
+        <div
+            id="lightbox-ofertas"
+            class="lightbox-ofertas"
+            hidden
+        >
+
+            <div
+                class="lightbox-conteudo"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="lightbox-nome"
+            >
+
+                <button
+                    id="fechar-lightbox"
+                    type="button"
+                >
+                    ✕ Fechar
+                </button>
+
+                <img
+                    id="lightbox-imagem"
+                    src=""
+                    alt=""
+                >
+
+                <h2 id="lightbox-nome"></h2>
+
+                <p id="lightbox-preco"></p>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================
+             CHAMADA FINAL
+        ================================== -->
+
+        <section class="chamada">
+
+            <h2>
+                Quer conhecer mais modelos?
+            </h2>
+
+            <p>
+                Explore nosso catálogo completo de tênis.
+            </p>
+
+            <a
+                href="produtos.html"
+                class="botao"
+            >
+                Ver todos os produtos
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================
+         RODAPÉ
+    ================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 LUX MODESTO.
+        </p>
+
+        <p>
+            Estilo, conforto e personalidade em cada passo.
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conheça a Lux Modesto, sua loja de tênis com estilo, qualidade e ofertas especiais de Natal."
+    >
+
+    <title>LUX MODESTO | Especial de Natal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="Java.js" defer></script>
+    <!-- Favicon da LUX MODESTO -->
+    <link rel="icon" type="image/png" href="Imagem/favicon.png">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO LUX MODESTO -->
+
+    <header class="cabecalho-lux">
+
+        <div class="lux-conteudo">
+
+            <!-- LOGO E NOME DA LOJA -->
+            <a
+                href="index.html"
+                class="lux-marca"
+                aria-label="Lux Modesto - Página inicial"
+            >
+
+                <img
+                    src="Imagem/Logo.png"
+                    alt="Logotipo Lux Modesto"
+                    class="lux-logo"
+                >
+
+                <div class="lux-identidade">
+                    <h2>LUX MODESTO</h2>
+                    <p>O luxo está em cada passo.</p>
+                </div>
+
+            </a>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav
+                class="lux-menu"
+                aria-label="Navegação principal"
+            >
+
+                <a href="index.html" aria-current="page">
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a href="galeria.html">
+                    Ofertas
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+
+        <!-- BANNER PRINCIPAL COM PARALLAX -->
+        <section class="banner">
+
+            <div class="banner-conteudo">
+
+                <p class="subtitulo">
+                    COLEÇÃO ESPECIAL DE NATAL
+                </p>
+
+                <h1>
+                    Seu próximo passo começa aqui.
+                </h1>
+
+                <p>
+                    Descubra tênis incríveis das suas marcas
+                    favoritas e encontre o modelo ideal
+                    para o seu estilo.
+                </p>
+
+                <a href="produtos.html" class="botao">
+                    Explorar produtos
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             NOVO: CARROSSEL DE NATAL
+        ================================== -->
+
+        <section
+            class="vitrine-natal"
+            aria-labelledby="titulo-vitrine"
+        >
+
+            <div class="vitrine-topo">
+
+                <div>
+                    <p class="subtitulo">
+                        SELEÇÃO ESPECIAL DE NATAL
+                    </p>
+
+                    <h2 id="titulo-vitrine">
+                        Destaques da coleção
+                    </h2>
+                </div>
+
+                <p>
+                    Três escolhas para começar a
+                    temporada com estilo.
+                </p>
+
+            </div>
+
+            <div
+                class="carrossel-natal"
+                id="carrossel-natal"
+                aria-roledescription="carrossel"
+                aria-label="Tênis em destaque"
+            >
+
+                <!-- O JavaScript cria os slides aqui -->
+                <div
+                    id="carrossel-slides"
+                    class="carrossel-slides"
+                ></div>
+
+                <!-- SETA ANTERIOR -->
+                <button
+                    type="button"
+                    id="carrossel-anterior"
+                    class="carrossel-seta carrossel-anterior"
+                    aria-label="Destaque anterior"
+                >
+                    &#10094;
+                </button>
+
+                <!-- SETA PRÓXIMO -->
+                <button
+                    type="button"
+                    id="carrossel-proximo"
+                    class="carrossel-seta carrossel-proximo"
+                    aria-label="Próximo destaque"
+                >
+                    &#10095;
+                </button>
+
+            </div>
+
+            <!-- INDICADORES DO CARROSSEL -->
+            <div class="carrossel-rodape">
+
+                <div
+                    id="carrossel-indicadores"
+                    class="carrossel-indicadores"
+                    aria-label="Selecionar destaque"
+                ></div>
+
+                <span
+                    id="carrossel-posicao"
+                    aria-live="polite"
+                >
+                    01 / 03
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             CATEGORIAS DE TÊNIS
+        ================================== -->
+
+        <section class="destaques">
+
+            <p class="subtitulo">
+                ESCOLHA SEU ESTILO
+            </p>
+
+            <h2>
+                Encontre seu próximo tênis
+            </h2>
+
+            <div class="categorias">
+
+                <!-- CASUAL -->
+                <article class="categoria">
+
+                    <h3>Casual</h3>
+
+                    <p>
+                        Conforto para todos os dias.
+                    </p>
+
+                    <a href="produtos.html?categoria=casual">
+                        Ver modelos
+                    </a>
+
+                </article>
+
+                <!-- ESPORTIVO -->
+                <article class="categoria">
+
+                    <h3>Esportivo</h3>
+
+                    <p>
+                        Para acompanhar seu movimento.
+                    </p>
+
+                    <a href="produtos.html?categoria=esportivo">
+                        Ver modelos
+                    </a>
+
+                </article>
+
+                <!-- STREETWEAR -->
+                <article class="categoria">
+
+                    <h3>Streetwear</h3>
+
+                    <p>
+                        Estilo para marcar presença.
+                    </p>
+
+                    <a href="produtos.html?categoria=streetwear">
+                        Ver modelos
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             CHAMADA DE NATAL
+        ================================== -->
+
+        <section class="chamada">
+
+            <h2>
+                Um Natal cheio de estilo!
+            </h2>
+
+            <p>
+                Confira nossa seleção especial de tênis.
+            </p>
+
+            <a href="galeria.html" class="botao">
+                Ver ofertas
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 LUX MODESTO.
+        </p>
+
+        <p>
+            Estilo, conforto e personalidade em cada passo.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

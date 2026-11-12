@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confira os 52 modelos de tênis da nossa loja.">
+    <title>Produtos | Lux Modesto - Natal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="Java.js" defer></script>
+    <!-- Favicon da LUX MODESTO -->
+    <link rel="icon" type="image/png" href="Imagem/favicon.png">
+</head>
+
+<body>
+
+    <header class="cabecalho-lux">
+
+        <div class="lux-conteudo">
+
+            <!-- LOGO E NOME DA LOJA -->
+            <a
+                href="index.html"
+                class="lux-marca"
+                aria-label="Lux Modesto - Página inicial"
+            >
+
+                <img
+                    src="Imagem/Logo.png"
+                    alt="Logotipo Lux Modesto"
+                    class="lux-logo"
+                >
+
+                <div class="lux-identidade">
+                    <h2>LUX MODESTO</h2>
+                    <p>O luxo está em cada passo.</p>
+                </div>
+
+            </a>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav
+                class="lux-menu"
+                aria-label="Navegação principal"
+            >
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="produtos.html" aria-current="page">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a href="galeria.html">
+                    Ofertas
+                </a>
+
+                <a href="contato.html">
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="catalogo catalogo-natal">
+
+            <div class="titulo-catalogo">
+                <p class="subtitulo">🎄 COLEÇÃO ESPECIAL DE NATAL 🎄</p>
+
+                <h1>Nossos Tênis</h1>
+
+                <p>
+                    Encontre o modelo perfeito para o seu estilo
+                    e aproveite nossa coleção especial de Natal!
+                </p>
+
+                <div class="enfeite-natal">
+                    ✦ ❄ ✦
+                </div>
+            </div>
+
+            <!-- Pesquisa e filtros -->
+            <div class="filtros filtros-natal">
+
+                <input
+                    type="search"
+                    id="pesquisa"
+                    placeholder="Pesquisar tênis ou marca..."
+                    aria-label="Pesquisar produtos"
+                >
+
+                <select id="categoria" aria-label="Filtrar por categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="casual">Casual</option>
+                    <option value="esportivo">Esportivo</option>
+                    <option value="streetwear">Streetwear</option>
+                    <option value="premium">Premium</option>
+                    <option value="corrida">Corrida</option>
+                </select>
+
+                <select id="ordenacao" aria-label="Ordenar produtos">
+                    <option value="padrao">Ordenar por</option>
+                    <option value="menor-preco">Menor preço</option>
+                    <option value="maior-preco">Maior preço</option>
+                    <option value="nome">Nome A-Z</option>
+                </select>
+
+            </div>
+
+            <p id="quantidade-produtos" aria-live="polite">
+                Carregando produtos...
+            </p>
+
+            <!-- Produtos carregados pelo JavaScript -->
+            <div id="lista-produtos" class="lista-produtos"></div>
+
+            <p id="mensagem-vazia" hidden>
+                Nenhum tênis encontrado.
+            </p>
+
+            <div class="mensagem-final-natal">
+              
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LUX MODESTO.</p>
+        <p>Estilo, conforto e personalidade em cada passo.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Entre em contato com a Lux Modesto, sua loja de tênis com estilo, qualidade e ofertas especiais de Natal."
+    >
+
+    <title>Contato | LUX MODESTO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="Java.js" defer></script>
+    <!-- Favicon da LUX MODESTO -->
+    <link rel="icon" type="image/png" href="Imagem/favicon.png">
+</head>
+
+<body>
+
+    <!-- ==================================
+         CABEÇALHO LUX MODESTO
+    ================================== -->
+
+    <header class="cabecalho-lux">
+
+        <div class="lux-conteudo">
+
+            <!-- LOGO E NOME -->
+            <a
+                href="index.html"
+                class="lux-marca"
+                aria-label="Lux Modesto - Página inicial"
+            >
+
+                <img
+                    src="Imagem/Logo.png"
+                    alt="Logotipo Lux Modesto"
+                    class="lux-logo"
+                >
+
+                <div class="lux-identidade">
+                    <h2>LUX MODESTO</h2>
+                    <p>O luxo está em cada passo.</p>
+                </div>
+
+            </a>
+
+            <!-- BOTÃO DO MENU PARA CELULAR -->
+            <button
+                id="menu-toggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-controls="menu-principal"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav
+                id="menu-principal"
+                class="lux-menu"
+                aria-label="Navegação principal"
+            >
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a href="galeria.html">
+                    Ofertas
+                </a>
+
+                <a
+                    href="contato.html"
+                    aria-current="page"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ==================================
+         CONTEÚDO PRINCIPAL
+    ================================== -->
+
+    <main>
+
+        <!-- BANNER -->
+        <section class="contato-banner">
+
+            <p class="subtitulo">
+                FALE CONOSCO
+            </p>
+
+            <h1>Entre em Contato</h1>
+
+            <p>
+                Tem alguma dúvida ou sugestão?
+                Nossa equipe está aqui para ajudar!
+            </p>
+
+        </section>
+
+        <!-- FORMULÁRIO E INFORMAÇÕES -->
+        <section class="contato-container">
+
+            <!-- FORMULÁRIO -->
+            <div class="contato-formulario">
+
+                <h2>Envie sua mensagem</h2>
+
+                <p>
+                    Preencha os campos abaixo para falar
+                    com nossa equipe.
+                </p>
+
+                <form id="form-contato" novalidate>
+
+                    <!-- NOME -->
+                    <div class="campo-contato">
+
+                        <label for="nome-contato">
+                            Nome completo *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome-contato"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            autocomplete="name"
+                            required
+                        >
+
+                        <small
+                            class="erro-campo"
+                            id="erro-nome"
+                        ></small>
+
+                    </div>
+
+                    <!-- E-MAIL -->
+                    <div class="campo-contato">
+
+                        <label for="email-contato">
+                            E-mail *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email-contato"
+                            name="email"
+                            placeholder="exemplo@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <small
+                            class="erro-campo"
+                            id="erro-email"
+                        ></small>
+
+                    </div>
+
+                    <!-- ASSUNTO -->
+                    <div class="campo-contato">
+
+                        <label for="assunto-contato">
+                            Assunto *
+                        </label>
+
+                        <select
+                            id="assunto-contato"
+                            name="assunto"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione um assunto
+                            </option>
+
+                            <option value="duvida">
+                                Dúvidas sobre produtos
+                            </option>
+
+                            <option value="pedido">
+                                Pedidos
+                            </option>
+
+                            <option value="promocao">
+                                Promoções
+                            </option>
+
+                            <option value="sugestao">
+                                Sugestões
+                            </option>
+
+                            <option value="outro">
+                                Outro assunto
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="erro-campo"
+                            id="erro-assunto"
+                        ></small>
+
+                    </div>
+
+                    <!-- MENSAGEM -->
+                    <div class="campo-contato">
+
+                        <label for="mensagem-contato">
+                            Mensagem *
+                        </label>
+
+                        <textarea
+                            id="mensagem-contato"
+                            name="mensagem"
+                            rows="6"
+                            placeholder="Escreva sua mensagem..."
+                            required
+                        ></textarea>
+
+                        <small
+                            class="erro-campo"
+                            id="erro-mensagem"
+                        ></small>
+
+                    </div>
+
+                    <!-- BOTÃO ENVIAR -->
+                    <button
+                        type="submit"
+                        class="botao botao-enviar"
+                    >
+                        Enviar mensagem
+                    </button>
+
+                    <p
+                        id="mensagem-formulario"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+            <!-- ==================================
+                 INFORMAÇÕES DA LOJA
+            ================================== -->
+
+            <aside class="contato-informacoes">
+
+                <h2>Informações da Loja</h2>
+
+                <!-- ENDEREÇO -->
+                <div class="contato-info-card">
+
+                    <h3>📍 Endereço</h3>
+
+                    <p>AV. Paulista, 250</p>
+                    <p>São Paulo - SP, 01310-000</p>
+
+                </div>
+
+                <!-- TELEFONE -->
+                <div class="contato-info-card">
+
+                    <h3>📞 Telefone</h3>
+
+                    <p>(19) 99278-2518</p>
+
+                </div>
+
+                <!-- E-MAIL -->
+                <div class="contato-info-card">
+
+                    <h3>✉️ E-mail</h3>
+
+                    <p>lux-modesto@gmail.com</p>
+
+                </div>
+
+                <!-- HORÁRIO DE ATENDIMENTO -->
+                <div class="contato-info-card">
+
+                    <h3>🕒 Atendimento</h3>
+
+                    <p>Segunda a sexta: 8h às 19h</p>
+                    <p>Sábado: 8h às 17h</p>
+
+                </div>
+
+                <!-- REDES SOCIAIS -->
+                <div class="contato-info-card">
+
+                    <h3>🌐 Redes Sociais</h3>
+
+                    <p>Instagram: @lux.modesto.oficial</p>
+                    <p>Facebook: LUX MODESTO</p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+        <!-- ==================================
+             CHAMADA FINAL
+        ================================== -->
+
+        <section class="chamada">
+
+            <h2>Já conhece nossos produtos?</h2>
+
+            <p>
+                Confira nossa coleção especial de Natal!
+            </p>
+
+            <a href="produtos.html" class="botao">
+                Explorar produtos
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================
+         RODAPÉ
+    ================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 LUX MODESTO.
+        </p>
+
+        <p>
+            Estilo, conforto e personalidade em cada passo.
+        </p>
+
+    </footer>
+
+</body>
+</html>
